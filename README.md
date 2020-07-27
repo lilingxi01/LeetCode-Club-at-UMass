@@ -9,6 +9,6 @@ Hi there 👋 If you wanna keep leetcoding to practice yourself, here is where y
 
 ## 操作指南 Guidance
 
-[简体中文指南](https://github.com/lilingxi01/LeetCode-Club-at-UMass/wiki/%E5%B0%8F%E7%99%BD%E6%8C%87%E5%8D%97)
+[简体中文指南](https://github.com/lilingxi01/LeetCode-Club-at-UMass/wiki)
 
 👆👆 看这儿
