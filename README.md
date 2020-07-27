@@ -3,7 +3,7 @@
 
 你好鸭 👋 如果你想要跟我们一起把LeetCode刷题坚持下去，那别犹豫了，我们在Issue里等你报道！
 
-Hi there 👋 If you wanna keep leetcoding to practice yourself, here is where you should be.
+Hi there 👋 If you wanna keep leetcoding to practice yourself more, here is where you should be engaged.
 
 ----
 
