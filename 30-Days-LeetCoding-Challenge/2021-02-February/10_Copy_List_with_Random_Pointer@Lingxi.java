@@ -18,7 +18,7 @@ class Solution {
     public Node copyRandomList(Node head) {
         Node node = head;
         while (node != null) {
-            Node curr = map.getOrDefault(node, helper(head));
+            Node curr = map.getOrDefault(node, helper(node));
             curr.next = helper(node.next);
             curr.random = helper(node.random);
             node = node.next;
