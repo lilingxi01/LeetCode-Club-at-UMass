@@ -8,16 +8,16 @@ class PeekingIterator implements Iterator<Integer> {
     
 	public PeekingIterator(Iterator<Integer> iterator) {
 	    // initialize any member here.
-        this.itr = iterator;
-        this.hasNext = itr.hasNext();
-        if (hasNext) {
-	        this.next = itr.next();
-        }
+	    this.itr = iterator;
+	    this.hasNext = itr.hasNext();
+	    if (hasNext) {
+	    	this.next = itr.next();
+	    }
 	}
 	
-    // Returns the next element in the iteration without advancing the iterator.
+        // Returns the next element in the iteration without advancing the iterator.
 	public Integer peek() {
-        return next;
+            return next;
 	}
 	
 	// hasNext() and next() should behave the same as in the Iterator interface.
@@ -25,13 +25,13 @@ class PeekingIterator implements Iterator<Integer> {
 	@Override
 	public Integer next() {
 	    Integer output = next;
-        if (itr.hasNext()) {
-            next = itr.next();
-        } else {
-            next = null;
-            hasNext = false;
-        }
-        return output;
+            if (itr.hasNext()) {
+                next = itr.next();
+            } else {
+                next = null;
+                hasNext = false;
+            }
+            return output;
 	}
 	
 	@Override
