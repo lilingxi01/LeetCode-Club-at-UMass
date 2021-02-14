@@ -3,18 +3,15 @@ class Solution {
         int[] mask = new int[graph.length];
         boolean output = true;
         for (int i = 0; i < mask.length; i++) {
-            mask[i] = -1;
-        }
-        for (int i = 0; i < mask.length; i++) {
-            if (mask[i] == -1)
-                output = !output ? output : helper(graph, mask, i, 0);
+            if (mask[i] == 0)
+                output = !output ? output : helper(graph, mask, i, 1);
         }
         return output;
     }
     
     // i: curr node, level: curr level
     private boolean helper(int[][] graph, int[] mask, int i, int level) {
-        if (mask[i] != -1) {
+        if (mask[i] != 0) {
             return (mask[i] % 2 == level % 2);
         } else {
             mask[i] = level;
